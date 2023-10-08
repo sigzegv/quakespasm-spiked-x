@@ -1398,11 +1398,21 @@ void M_Options_Key (int k)
 const char *quakebindnames[][2] =
 {
 	{"+attack",		"attack"},
-	{"impulse 10",		"next weapon"},
-	{"impulse 12",		"prev weapon"},
 	{"+jump",		"jump / swim up"},
 	{"+forward",		"walk forward"},
 	{"+back",		"backpedal"},
+	{"+moveleft",		"step left"},
+	{"+moveright",		"step right"},
+	{"impulse 10",		"next weapon"},
+	{"impulse 12",		"prev weapon"},
+	{"impulse 1", "axe"},
+	{"impulse 2", "shotgun"},
+	{"impulse 3", "super shotgun"},
+	{"impulse 4", "naingun"},
+	{"impulse 5", "heavy nailgun"},
+	{"impulse 6", "grenade launchr"},
+	{"impulse 7", "rocket lnchr"},
+	{"impulse 8", "lightning gun"},
 	{"+left",		"turn left"},
 	{"+right",		"turn right"},
 	{"+speed",		"run"},
@@ -1416,7 +1426,8 @@ const char *quakebindnames[][2] =
 	{"+klook",		"keyboard look"},
 	{"+moveup",		"swim up"},
 	{"+movedown",		"swim down"},
-	{"+voip",		"Voice Chat"}
+	{"+voip",		"Voice Chat"},
+	{"toggleconsole", "toggle console"},
 };
 #define	NUMQUAKECOMMANDS	(sizeof(quakebindnames)/sizeof(quakebindnames[0]))
 
